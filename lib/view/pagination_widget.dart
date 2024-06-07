@@ -23,6 +23,8 @@ import 'package:get/get.dart';
 ///   paginate: true,
 /// );
 /// ```
+///
+
 class PaginationWidget extends StatelessWidget {
   /// The child widget that will be wrapped by the pagination logic.
   final Widget child;
