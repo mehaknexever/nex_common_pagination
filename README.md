@@ -32,7 +32,7 @@ dependencies:
   nex_common_pagination:
     git:
       url: https://github.com/mehaknexever/nex_common_pagination.git
-      ref: main
+      ref: master
 ```
 Run flutter pub get to install the dependencies.
 
