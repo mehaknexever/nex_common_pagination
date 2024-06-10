@@ -11,8 +11,10 @@ and the Flutter guide for
 [developing packages and plugins](https://flutter.dev/developing-packages).
 -->
 
-TODO: Put a short description of the package here that helps potential users
-know whether this package might be useful for them.
+## Getting started
+
+This package provides a utility class for handling pagination when the user scrolls. It triggers a function to load more data when the user reaches near the bottom of the scrollable content.
+
 
 ## Features
 
@@ -20,14 +22,6 @@ know whether this package might be useful for them.
 - Triggers a provided pagination function to load more data.
 - Customizable to fit various use cases.
 
-## Getting started
-
-This package provides a utility class for handling pagination when the user scrolls. It triggers a function to load more data when the user reaches near the bottom of the scrollable content.
-
-## Features
-
-- Automatically triggers a pagination function when scrolling near the bottom.
-- Configurable to enable or disable pagination.
 
 ## Installation
 
