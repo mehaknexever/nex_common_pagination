@@ -16,17 +16,35 @@ know whether this package might be useful for them.
 
 ## Features
 
-TODO: List what your package can do. Maybe include images, gifs, or videos.
+- Automatically detects when the user scrolls near the bottom of the content.
+- Triggers a provided pagination function to load more data.
+- Customizable to fit various use cases.
 
 ## Getting started
 
-TODO: List prerequisites and provide or point to information on how to
-start using the package.
+This package provides a utility class for handling pagination when the user scrolls. It triggers a function to load more data when the user reaches near the bottom of the scrollable content.
+
+## Features
+
+- Automatically triggers a pagination function when scrolling near the bottom.
+- Configurable to enable or disable pagination.
+
+## Installation
+
+Add this package to your `pubspec.yaml` file:
+
+```yaml
+dependencies:
+  your_package_name:
+    git:
+      url: git@github.com:yourusername/yourrepository.git
+      ref: main
+```
+Run flutter pub get to install the dependencies.
 
 ## Usage
 
-TODO: Include short and useful examples for package users. Add longer examples
-to `/example` folder.
+The PaginationWidget class is a StatelessWidget that wraps a child widget and listens for scroll notifications to trigger a pagination function when the user reaches near the bottom of the scrollable content.
 
 ```dart
 import 'package:flutter/material.dart';
@@ -61,8 +79,20 @@ class MyListView extends StatelessWidget {
 
 ```
 
-## Additional information
+### Pagination Widget Parameters
+- child (Widget): The child widget that will be wrapped by the pagination logic.
+- paginationFunction (void Function()): The function to be called to load more data when the user scrolls near the bottom.
+- total (int): The total number of items available.
+- current (int): The current number of items loaded.
+- paginate (bool?, optional): A flag indicating whether to enable pagination.
 
-TODO: Tell users more about the package: where to find more information, how to
-contribute to the package, how to file issues, what response they can expect
-from the package authors, and more.
+## Notes
+
+- Ensure to handle the pagination function appropriately to avoid performance issues or excessive API calls.
+- Adjust the scroll position threshold as needed by modifying the scrollInfo.metrics.pixels check in the PaginationWidget.
+
+Author
+Mehak
+
+License
+This project is licensed under the MIT License - see the LICENSE file for details..
