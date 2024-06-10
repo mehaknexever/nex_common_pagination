@@ -85,8 +85,9 @@ class MyListView extends StatelessWidget {
 - Ensure to handle the pagination function appropriately to avoid performance issues or excessive API calls.
 - Adjust the scroll position threshold as needed by modifying the scrollInfo.metrics.pixels check in the PaginationWidget.
 
-Author
+### Author
 Mehak
 
-License
+## License
+
 This project is licensed under the MIT License - see the LICENSE file for details..
