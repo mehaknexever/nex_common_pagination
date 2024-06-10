@@ -29,9 +29,9 @@ Add this package to your `pubspec.yaml` file:
 
 ```yaml
 dependencies:
-  your_package_name:
+  nex_common_pagination:
     git:
-      url: git@github.com:yourusername/yourrepository.git
+      url: https://github.com/mehaknexever/nex_common_pagination.git
       ref: main
 ```
 Run flutter pub get to install the dependencies.
