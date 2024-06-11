@@ -70,13 +70,7 @@ class PaginationWidget extends StatelessWidget {
         } else if (scrollInfo is ScrollEndNotification) {
           scrollState.value = true;
         }
-
-        print("Total ====>>>>  $total");
-        print("Current Page  ====>>>>  $current");
-
         if (total > current) {
-          print("Pagination ====>>>>  ${total > current}");
-
           bool paginate = this.paginate ?? false;
           if (paginate) {
             paginate = scrollInfo.metrics.pixels >=
@@ -87,7 +81,6 @@ class PaginationWidget extends StatelessWidget {
                     (scrollInfo.metrics.maxScrollExtent - 200) &&
                 scrollInfo.metrics.pixels > 0.0;
           }
-
           if (paginate) {
             if (timer != null) {
               timer!.cancel();
